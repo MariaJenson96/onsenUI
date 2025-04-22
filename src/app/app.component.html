@@ -1,7 +1,15 @@
 <ons-page>
-  <router-outlet></router-outlet>
+  <ons-toolbar>
+    <div class="center">Dashboard</div>
+  </ons-toolbar>
+  <div class="page__background"></div>
+  <div class="content" class="initial-page">
+    <div class="p-1">
+      <router-outlet/>
+    </div>
+  </div>  
   <ons-tabbar>
-    <div class="tabbar">
+    <div class="tabbar bg-white">
       <ons-tab label="Dashboard" icon="ion-ios-home" routerLink="home"></ons-tab>
       <ons-tab label="Transactions" icon="exchange"></ons-tab>
       <ons-tab label="Add" icon="md-plus" active></ons-tab>

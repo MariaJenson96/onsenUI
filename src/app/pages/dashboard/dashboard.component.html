@@ -1,11 +1,34 @@
-<ons-page>
-    <ons-toolbar>
-      <div class="center">Dashboard</div>
-    </ons-toolbar>
-    <div class="background"></div>
-    <div class="content" class="initial-page">
-      <div style="text-align: center; margin: 10px">
-        <p>This is the first page.</p>
+<ons-card class="this-month-card">
+  <small>This Month</small>
+  <div class="content">
+    <div class="row mt-2">
+      <div class="col-4">
+        <div class="row">
+          <small>Income</small>
+          <label class="income-text">{{ 1200 | currency:'INR':'symbol':'1.2-2':'en-IN' }}
+          </label>
+        </div>
+      </div>
+      <div class="col-4"></div>
+      <div class="col-4">
+        <div class="row">
+          <small>Expense</small>
+          <label class="expense-text">{{ 1200 | currency:'INR':'symbol':'1.2-2':'en-IN' }}
+          </label>
+        </div>
       </div>
     </div>
-  </ons-page>
+  </div>
+</ons-card>
+
+<ons-card class="category-card mt-2">
+  <small>Expenses by category</small>
+  <div class="row mt-3">
+    <apx-chart
+        [series]="[50, 30, 20]"
+        [chart]="{ type: 'pie' }"
+        [labels]="['High', 'Medium', 'Low']"
+        [colors]="['rgb(255, 69, 96)', 'rgb(254, 176, 25)', 'rgb(238, 130, 238)']" 
+      ></apx-chart>
+  </div>
+</ons-card>
