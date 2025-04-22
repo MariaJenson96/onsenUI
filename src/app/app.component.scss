@@ -1,14 +1,4 @@
-html, body, ons-page {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  ons-tabbar {
-    position: fixed !important;
-    bottom: 0;
-    width: 100%;
-    z-index: 999;
+.ons-tabbar {
+    padding-bottom: env(safe-area-inset-bottom);
   }
   

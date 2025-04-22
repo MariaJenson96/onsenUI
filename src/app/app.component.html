@@ -10,7 +10,7 @@
       </ons-scroller>      
     </div>
   </div>  
-  <ons-tabbar>
+  <ons-tabbar modifier="autogrow">
     <div class="tabbar bg-white">
       <ons-tab label="Dashboard" icon="ion-ios-home" routerLink="home"></ons-tab>
       <ons-tab label="Transactions" icon="exchange"></ons-tab>
@@ -19,22 +19,18 @@
       <ons-tab label="Settings" icon="md-settings"></ons-tab>
     </div>
   </ons-tabbar>
-</ons-page> -->
+</ons-page>  -->
 
-<ons-page>
-  <div class="content" style="overflow-y: auto;">
-    <router-outlet/>
-  </div>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ionic in Angular</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-  <ons-tabbar position="bottom">
-    <ons-tabbar>
-      <div class="tabbar bg-white">
-        <ons-tab label="Dashboard" icon="ion-ios-home" routerLink="home"></ons-tab>
-        <ons-tab label="Transactions" icon="exchange"></ons-tab>
-        <ons-tab label="Add" icon="md-plus" active></ons-tab>
-        <ons-tab label="Budget" icon="wallet"></ons-tab>      
-        <ons-tab label="Settings" icon="md-settings"></ons-tab>
-      </div>
-    </ons-tabbar>
-  </ons-tabbar>
-</ons-page>
+<ion-content class="ion-padding">
+  <ion-button expand="block" color="primary">
+    Click Me
+  </ion-button>
+</ion-content>
+
+

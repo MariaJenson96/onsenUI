@@ -19,6 +19,8 @@
     "@angular/pwa": "^19.2.8",
     "@angular/router": "^19.2.0",
     "@angular/service-worker": "^19.2.0",
+    "@ionic/angular": "^8.5.5",
+    "@ionic/core": "^8.5.5",
     "apexcharts": "^4.6.0",
     "bootstrap": "^5.3.5",
     "ng-apexcharts": "^1.15.0",
