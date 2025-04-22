@@ -1,4 +1,4 @@
-<ons-page>
+<!-- <ons-page>
   <ons-toolbar>
     <div class="center">Dashboard</div>
   </ons-toolbar>
@@ -19,4 +19,11 @@
       <ons-tab label="Settings" icon="md-settings"></ons-tab>
     </div>
   </ons-tabbar>
-</ons-page>
+</ons-page> -->
+
+<ons-tabbar position="bottom" [activeIndex]="activeTab">
+  <ons-tab label="Home" icon="fa-home" [active]="activeTab === 0" (click)="setActiveTab(0)"></ons-tab>
+  <ons-tab label="Settings" icon="fa-cogs" [active]="activeTab === 1" (click)="setActiveTab(1)"></ons-tab>
+  <ons-tab label="Profile" icon="fa-user" [active]="activeTab === 2" (click)="setActiveTab(2)"></ons-tab>
+</ons-tabbar>
+<router-outlet></router-outlet>

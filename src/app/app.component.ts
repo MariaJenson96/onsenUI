@@ -21,4 +21,10 @@ export class AppComponent {
   showAlert() {
 
   }
+
+  activeTab = 0;
+
+  setActiveTab(index: number) {
+    this.activeTab = index;
+  }
 }
