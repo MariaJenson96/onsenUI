@@ -21,9 +21,20 @@
   </ons-tabbar>
 </ons-page> -->
 
-<ons-tabbar position="bottom" [activeIndex]="activeTab">
-  <ons-tab label="Home" icon="fa-home" [active]="activeTab === 0" (click)="setActiveTab(0)"></ons-tab>
-  <ons-tab label="Settings" icon="fa-cogs" [active]="activeTab === 1" (click)="setActiveTab(1)"></ons-tab>
-  <ons-tab label="Profile" icon="fa-user" [active]="activeTab === 2" (click)="setActiveTab(2)"></ons-tab>
-</ons-tabbar>
-<router-outlet></router-outlet>
+<ons-page>
+  <div class="content" style="overflow-y: auto;">
+    <router-outlet/>
+  </div>
+
+  <ons-tabbar position="bottom">
+    <ons-tabbar>
+      <div class="tabbar bg-white">
+        <ons-tab label="Dashboard" icon="ion-ios-home" routerLink="home"></ons-tab>
+        <ons-tab label="Transactions" icon="exchange"></ons-tab>
+        <ons-tab label="Add" icon="md-plus" active></ons-tab>
+        <ons-tab label="Budget" icon="wallet"></ons-tab>      
+        <ons-tab label="Settings" icon="md-settings"></ons-tab>
+      </div>
+    </ons-tabbar>
+  </ons-tabbar>
+</ons-page>

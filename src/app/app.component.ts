@@ -11,6 +11,9 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppComponent {
+navigate(arg0: string) {
+
+}
   constructor(private pwaInstallService: PwaInstallService) {}
   
 
