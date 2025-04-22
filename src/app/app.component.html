@@ -1,7 +1,10 @@
 <ons-page>
-  <ons-toolbar>
-    <div class="center">Onsen UI with Angular 18</div>
-  </ons-toolbar>
-
-  <ons-button (click)="showAlert()">Show Alert</ons-button>
+  <router-outlet></router-outlet>
+  <ons-tabbar>
+    <div class="tabbar">
+      <ons-tab label="Page1" icon="ion-ios-home" routerLink="/home" active></ons-tab>
+      <ons-tab label="Page2" icon="ion-ios-browsers" routerLink="/home/second"></ons-tab>
+      <ons-tab label="Page3" icon="ion-ios-search"></ons-tab>
+    </div>
+  </ons-tabbar>
 </ons-page>

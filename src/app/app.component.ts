@@ -1,17 +1,24 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { PwaInstallService } from './services/pwa-install.service';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppComponent {
-showAlert() {
-throw new Error('Method not implemented.');
-}
-  title = 'onsenUI';
+  constructor(private pwaInstallService: PwaInstallService) {}
+  
+
+  public installApp(): void {
+    this.pwaInstallService.promptInstall();
+  }
+  
+  showAlert() {
+
+  }
 }
