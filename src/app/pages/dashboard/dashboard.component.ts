@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @Component({
-  selector: 'app-firstpage',
+  selector: 'app-dashboard',
   imports: [],
-  templateUrl: './firstpage.component.html',
-  styleUrl: './firstpage.component.scss',
+  templateUrl: './dashboard.component.html',
+  styleUrl: './dashboard.component.scss',
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
-export class FirstpageComponent {
+export class DashboardComponent {
 
 }

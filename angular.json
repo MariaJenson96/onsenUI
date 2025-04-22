@@ -33,8 +33,8 @@
             ],
             "styles": [
               "src/styles.scss",
-                "node_modules/onsenui/css/onsenui.css",
-  "node_modules/onsenui/css/onsen-css-components.css"
+              "node_modules/onsenui/css/onsenui.min.css",
+              "node_modules/onsenui/css/old-onsen-css-components.min.css"
             ],
             "scripts": [
                 "node_modules/onsenui/js/onsenui.min.js"
@@ -97,8 +97,8 @@
             ],
             "styles": [
               "src/styles.scss",
-                "node_modules/onsenui/css/onsenui.css",
-  "node_modules/onsenui/css/onsen-css-components.css"
+              "node_modules/onsenui/css/onsenui.min.css",
+              "node_modules/onsenui/css/old-onsen-css-components.min.css"
             ],
             "scripts": [
                 "node_modules/onsenui/js/onsenui.min.js"
